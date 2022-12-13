@@ -1,0 +1,26 @@
+#foo{
+    text-align: justify;
+}
+#baz{
+    text-align: center;
+}
+#bar{
+    float: right; top: 0; right: 0;
+}
+
+button{
+    background-color: royalblue;
+    color: black;
+    font-weight: 900;
+}
+button:hover{
+    color: aquamarine;
+}
+img{
+    size: 20px;
+    height: 200px;
+    width: 200px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
