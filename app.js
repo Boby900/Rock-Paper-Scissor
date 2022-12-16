@@ -18,39 +18,40 @@ function generateComputerChoice(){
     const randomNumber = Math.floor(Math.random() * 3) + 1
     
     if(randomNumber === 1){
-        computerChoice = " rock"
+        computerChoice = "rock"
     }
     else if(randomNumber === 2){
-        computerChoice = " scissor"
+        computerChoice = "scissor"
     }
     else if(randomNumber === 3){
-        computerChoice = " paper"
+        computerChoice = "paper"
     }
     computerChoiceshower.innerHTML = computerChoice
 }
 function getResult() {
     if (computerChoice === userChoice) {
-      resulted.innerHTML = 'its a draw!'}
+      resulted = 'its a draw!'
+    }
     if (computerChoice === 'rock' && userChoice === "paper") {
-      resulted.innerHTML = 'you win!'
+      resulted = 'you win!'
     }
-    if (computerChoice === 'rock' && userChoice === "scissors") {
-      resulted.innerHTML = 'you lost!'
+    if (computerChoice === 'rock' && userChoice === "scissor") {
+      resulted = 'you lost!'
     }
-    if (computerChoice === 'paper' && userChoice === "scissors") {
-      resulted.innerHTML = 'you win!'
+    if (computerChoice === 'paper' && userChoice === "scissor") {
+      resulted = 'you win!'
     }
     if (computerChoice === 'paper' && userChoice === "rock") {
-      resulted.innerHTML = 'you lose!'
+      resulted = 'you lose!'
     }
     if (computerChoice === 'scissors' && userChoice === "rock") {
-      resulted.innerHTML = 'you win!'
+      resulted = 'you win!'
     }
     if (computerChoice === 'scissors' && userChoice === "paper") {
-      resulted.innerHTML = 'you lose!'
+      resulted = 'you lose!'
     }
     resultDisplay.innerHTML = resulted
-  }
+}
 
 
 //flkjsdklfjklsdjlf
